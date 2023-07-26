@@ -13,6 +13,7 @@
             width: 500px;
             border-collapse: collapse;
             border: 2px solid black;
+            position: relative;
         }
 
         caption {
@@ -20,18 +21,29 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+            border: 1px solid black;
         }
 
         td, th {
             border: 1px solid black;
             border-collapse: collapse;
-            padding: 5px;
+            padding: 10px;
         }
 
         thead, tfoot {
             background-color: rgb(70, 70, 70);
             color: white;
             border: 2px solid black;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(70, 70, 70);
+        }
+
+        tbody > tr:nth-child(even) { /* odd, even or 2n */
+            background-color: lightgray;
         }
 
         .num {
