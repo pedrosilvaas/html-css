@@ -10,10 +10,11 @@
         }
 
         table {
-            width: 500px;
+            width: 1000px;
             border-collapse: collapse;
             border: 2px solid black;
             position: relative;
+            text-align: center;
         }
 
         caption {
@@ -21,7 +22,7 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
-            border: 1px solid black;
+            border: 2px solid black;
         }
 
         td, th {
@@ -46,10 +47,13 @@
             background-color: lightgray;
         }
 
-        .num {
-            text-align: right;
+        .position {
+            width: 50px;
         }
 
+        .state {
+            width: 150px;
+        }
 
     </style>
 </head>
@@ -70,124 +74,266 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" class="position">Posição</th>
+                <th scope="col" class="state">Estado</th>
+                <th scope="col">População (2022)</th>
+                <th scope="col">População (2010)</th>
+                <th scope="col">Mudança</th>
+                <th scope="col">Porcentagem</th>
+                <th scope="col">País Comparável</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td class="pos-center">1</td>
                 <td>São Paulo</td>
-                <td class="num">45.919.049</td>
+                <td class="num-right">44.420.459</td>
+                <td class="num-right">41.262.199</td>
+                <td class="num-center">+7.65%</td>
+                <td class="num-center">22.2%</td>
+                <td class="num-center">Espanha (46.754.778)</td>
             </tr>
             <tr>
+                <td class="pos-center">2</td>
                 <td>Minas Gerais</td>
-                <td class="num">20.538.718</td>
+                <td class="num-right">20.538.718</td>
+                <td class="num-right">19.597.330</td>
+                <td class="num-center">+4.8%</td>
+                <td class="num-center">10.0%</td>
+                <td class="num-center">Burquina F. (20.903.273)</td>
             </tr>
             <tr>
+                <td class="pos-center">3</td>
                 <td>Rio de Janeiro</td>
-                <td class="num">16.054.524</td>
+                <td class="num-right">16.054.524</td>
+                <td class="num-right">15.989.929</td>
+                <td class="num-center">+0.4%</td>
+                <td class="num-center">8.0%</td>
+                <td class="num-center">Camboja (16.718.965)</td>
             </tr>
             <tr>
+                <td class="pos-center">4</td>
                 <td>Bahia</td>
-                <td class="num">14.136.417</td>
+                <td class="num-right">14 136 417</td>
+                <td class="num-right">14 016 906</td>
+                <td class="num-center">+0.85%</td>
+                <td class="num-center">7.1%</td>
+                <td class="num-center">Zimbabwe (14.862.924)</td>
             </tr>
             <tr>
+                <td class="pos-center">5</td>
                 <td>Paraná</td>
-                <td class="num">11.443.208</td>
+                <td class="num-right">11 443 208</td>
+                <td class="num-right">10 444 526</td>
+                <td class="num-center">+9.56%</td>
+                <td class="num-center">5.7%</td>
+                <td class="num-center">Tunísia (11.818.619)</td>
             </tr>
             <tr>
+                <td class="pos-center">6</td>
                 <td>Rio Grande do Sul</td>
-                <td class="num">10.880.506</td>
+                <td class="num-right">10.880.506</td>
+                <td class="num-right">10.693.929</td>
+                <td class="num-center">+1.74%</td>
+                <td class="num-center">5.3%</td>
+                <td class="num-center">Cuba (11.326.616)</td>
             </tr>
             <tr>
+                <td class="pos-center">7</td>
                 <td>Pernambuco</td>
-                <td class="num">9.058.155</td>
+                <td class="num-right">9.058.155</td>
+                <td class="num-right">8.796.448</td>
+                <td class="num-center">+2.98%</td>
+                <td class="num-center">4.4%</td>
+                <td class="num-center">Áustria (9.006.398)</td>
             </tr>
             <tr>
+                <td class="pos-center">8</td>
                 <td>Ceará</td>
-                <td class="num">8.791.688</td>
+                <td class="num-right">8.791.688</td>
+                <td class="num-right">8.452.381</td>
+                <td class="num-center">+4.01%</td>
+                <td class="num-center">4.3%</td>
+                <td class="num-center">P.N. Guiné (8.947.024)</td>
             </tr>
             <tr>
+                <td class="pos-center">9</td>
                 <td>Pará</td>
-                <td class="num">8.116.132</td>
+                <td class="num-right">8.116.132</td>
+                <td class="num-right">7.581.051</td>
+                <td class="num-center">+7.06%</td>
+                <td class="num-center">4.1%</td>
+                <td class="num-center">Suíça (8.654.622)</td>
             </tr>
             <tr>
+                <td class="pos-center">10</td>
                 <td>Santa Catarina</td>
-                <td class="num">7.609.601</td>
+                <td class="num-right">7.609.601</td>
+                <td class="num-right">6.248.436</td>
+                <td class="num-center">+21.78</td>
+                <td class="num-center">3.7%</td>
+                <td class="num-center">Paraguai (7.132.538)</td>
             </tr>
             <tr>
+                <td class="pos-center">11</td>
                 <td>Goiás</td>
-                <td class="num">7.055.228</td>
+                <td class="num-right">7.055.228</td>
+                <td class="num-right">6.003.788</td>
+                <td class="num-center">+17.51%</td>
+                <td class="num-center">3.3%</td>
+                <td class="num-center">Bulgária (6.948.445)</td>
             </tr>
             <tr>
+                <td class="pos-center">12</td>
                 <td>Maranhão</td>
-                <td class="num">6.775.152</td>
+                <td class="num-right">6.775.152</td>
+                <td class="num-right">6.574.789</td>
+                <td class="num-center">+3.05%</td>
+                <td class="num-center">3.3%</td>
+                <td class="num-center">Bulgária (6.948.445)</td>
             </tr>
             <tr>
+                <td class="pos-center">13</td>
                 <td>Paraíba</td>
-                <td class="num">3.974.495</td>
+                <td class="num-right">3.974.495</td>
+                <td class="num-right">3.766.528</td>
+                <td class="num-center">+5.52%</td>
+                <td class="num-center">1.9%</td>
+                <td class="num-center">Geórgia (3.989.167)</td>
             </tr>
             <tr>
+                <td class="pos-center">14</td>
                 <td>Amazonas</td>
-                <td class="num">3.941.175</td>
+                <td class="num-right">3.941.175</td>
+                <td class="num-right">3.483.985</td>
+                <td class="num-center">+13.12%</td>
+                <td class="num-center">1.9%</td>
+                <td class="num-center">Geórgia (3.989.167)</td>
             </tr>
             <tr>
+                <td class="pos-center">15</td>
                 <td>Espírito Santo</td>
-                <td class="num">3.833.486</td>
+                <td class="num-right">3.833.486</td>
+                <td class="num-right">3.514.952</td>
+                <td class="num-center">+9.06%</td>
+                <td class="num-center">1.9%</td>
+                <td class="num-center">Geórgia (3.989.167)</td>
             </tr>
             <tr>
+                <td class="pos-center">16</td>
                 <td>Mato Grosso</td>
-                <td class="num">3.658.813</td>
+                <td class="num-right">3.658.813</td>
+                <td class="num-right">3.035.122</td>
+                <td class="num-center">+20.55%</td>
+                <td class="num-center">1.8%</td>
+                <td class="num-center">Geórgia (3.989.167)</td>
             </tr>
             <tr>
+                <td class="pos-center">17</td>
                 <td>Rio Grande do Norte</td>
-                <td class="num">3.302.406</td>
+                <td class="num-right">3.302.406</td>
+                <td class="num-right">3.168.027</td>
+                <td class="num-center">+4.24%</td>
+                <td class="num-center">1,6%</td>
+                <td class="num-center">Uruguai (3.473.730)</td>
             </tr>
             <tr>
+                <td class="pos-center">18</td>
                 <td>Piauí</td>
-                <td class="num">3.269.200</td>
+                <td class="num-right">3.269.200</td>
+                <td class="num-right">3.118.360</td>
+                <td class="num-center">+4.84%</td>
+                <td class="num-center">1.6%</td>
+                <td class="num-center">Bósnia (3.280.819)</td>
             </tr>
             <tr>
+                <td class="pos-center">19</td>
                 <td>Alagoas</td>
-                <td class="num">3.127.511</td>
+                <td class="num-right">3.127.511</td>
+                <td class="num-right">3.120.494</td>
+                <td class="num-center">+0.22%</td>
+                <td class="num-center">1.5%</td>
+                <td class="num-center">Mónaco (3.278.290)</td>
             </tr>
             <tr>
+                <td class="pos-center">20</td>
                 <td>Distrito Federal</td>
-                <td class="num">2.817.068</td>
+                <td class="num-right">2.817.068</td>
+                <td class="num-right">2.570.160</td>
+                <td class="num-center">+9.61%</td>
+                <td class="num-center">1.4%</td>
+                <td class="num-center">Armênia (2.963.243)</td>
             </tr>
             <tr>
+                <td class="pos-center">21</td>
                 <td>Mato Grosso do Sul</td>
-                <td class="num">2.756.700</td>
+                <td class="num-right">2.756.700</td>
+                <td class="num-right">2.449.024</td>
+                <td class="num-center">+12.56%</td>
+                <td class="num-center">1,4%</td>
+                <td class="num-center">Albânia (2.877.797)</td>
             </tr>
             <tr>
+                <td class="pos-center">22</td>
                 <td>Sergipe</td>
-                <td class="num">2.209.558</td>
+                <td class="num-right">2.209.558</td>
+                <td class="num-right">2.068.017</td>
+                <td class="num-center">+6.84%</td>
+                <td class="num-center">1,1%</td>
+                <td class="num-center">Gabão (2.225.734)</td>
             </tr>
             <tr>
+                <td class="pos-center">23</td>
                 <td>Rondônia</td>
-                <td class="num">1.581.016</td>
+                <td class="num-right">1.581.016</td>
+                <td class="num-right">1.562.409</td>
+                <td class="num-center">+1.19%</td>
+                <td class="num-center">0.8%</td>
+                <td class="num-center">Bahrein (1.701.575)</td>
             </tr>
             <tr>
-                <td>Tocantins</td>
-                <td class="num">1.511.459</td>
+                <td class="pos-center">24</td>
+                <td>Toncantins</td>
+                <td class="num-right">1.511.459</td>
+                <td class="num-right">1.383.445</td>
+                <td class="num-center">+9.25%</td>
+                <td class="num-center">0.8%</td>
+                <td class="num-center">Guiné Eq. (1.402.985)</td>
             </tr>
             <tr>
+                <td class="pos-center">25</td>
                 <td>Acre</td>
-                <td class="num">830.026</td>
+                <td class="num-right">830.026</td>
+                <td class="num-right">733.559</td>
+                <td class="num-center">+13.15%</td>
+                <td class="num-center">0,4%</td>
+                <td class="num-center">Comores (869.601)</td>
             </tr>
             <tr>
+                <td class="pos-center">26</td>
                 <td>Amapá</td>
-                <td class="num">733.508</td>
+                <td class="num-right">733.508</td>
+                <td class="num-right">669.526</td>
+                <td class="num-center">+9.56%</td>
+                <td class="num-center">0.4%</td>
+                <td class="num-center">Guiné (786.552)</td>
             </tr>
             <tr>
+                <td class="pos-center">27</td>
                 <td>Roraima</td>
-                <td class="num">636.303</td>
+                <td class="num-right">636.303</td>
+                <td class="num-right">450.479</td>
+                <td class="num-center">+41.25%</td>
+                <td class="num-center">0.3%</td>
+                <td class="num-center">Montenegro (649.335)</td>
             </tr>
+         
+
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>203.062.512</strong></td>
+                <th scope="row" colspan="2">Total de Habitantes</th>
+                <td class="num" colspan="5" style="text-align: center;"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
     </table>
