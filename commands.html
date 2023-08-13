@@ -36,8 +36,12 @@
 -> span - aumenta o número de colunas para personalização (normalmente utilizado junto com o colgroup). span também pode ser utilizado para adicionar um elemento em linha
 -> overflow-x: auto - usado para fazer somente a tabela ter uma rolagem lateral em telas menores, para o conteúdo não deslocar junto
 -> form - cria um formulário. É necessário utilizar outras tags, como input junto.
-    autocomplete: off - tira as sugestões de autocomplete
+    autocomplete: off - tira as sugestões de autocomplete. Pode ser usado na tag form ou na tag input.
     method: get e post - get é o padrão, adiciona os dados na URL (utilizar quando os dados NÃO forem sensíveis). post não adiciona os dados na URL, mas ainda aparece no DevTools (utilizar quando os dados forem sensíveis, preferencialmente utilizar https).
+    required - torna o campo obrigatório
+    minlenght e maxlenght - determina o mínimo e o máximo de caracteres
+    placeholder - adiciona um texto para "segurar" um input
+
 -> label - faz uma relação entre o título do input e o próprio input
     for - utilizar o ID do input para fazer a relação
 
